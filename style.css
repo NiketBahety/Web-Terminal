@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu Mono", monospace;
+}
+:root {
+  /* Pallete 1 */
+
+  /* --bg: #fdf6e3;
+  --primary: #b58a22;
+  --dark: #062b36;
+  --secondary: #586e75;
+  --cursor: #93a1a1;
+  --error: #dc3e30;
+  --shadow: #586e7565; */
+
+  /* Pallete 2 */
+
+  /* --bg: #c2c5aa;
+  --primary: #333d29;
+  --dark: #582f0e;
+  --secondary: #936639;
+  --cursor: #b6ad90;
+  --error: #dc3e30;
+  --shadow: #582f0e67; */
+
+  /* Pallete 3 */
+
+  --bg: #303446;
+  --primary: #e78284;
+  --dark: #b5bfe2;
+  --secondary: #e5c890;
+  --cursor: #93a1a1;
+  --error: #dc3e30;
+  --shadow: #e5c99074;
+}
+body {
+  background-color: var(--bg);
+}
+.main {
+  --padding: 10px;
+  background-color: var(--bg);
+  width: calc(100vw - 2 * var(--padding));
+  height: calc(100vh - 2 * var(--padding));
+  margin: var(--padding);
+  border: 2px solid var(--primary);
+  overflow-y: scroll;
+  padding: 20px;
+}
+
+.main::-webkit-scrollbar {
+  display: none;
+}
+.line {
+  font-size: 18px;
+  font-weight: bold;
+}
+.line-heading {
+  color: var(--dark);
+}
+.text-secondary {
+  color: var(--secondary);
+}
+.text-cursor {
+  color: var(--cursor);
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+::selection {
+  background-color: var(--dark);
+  color: var(--bg);
+}
+/* #input {
+  position: absolute;
+  left: -1000px;
+} */
+.command {
+  color: var(--secondary);
+  word-wrap: break-word;
+}
+.line {
+  margin: 10px 0;
+}
+.banner {
+  font-size: 22px;
+  color: var(--dark);
+}
+.banner p {
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  animation: typing 0.5s steps(30, end);
+}
+#command-line {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 0.5s steps(30, end);
+}
+
+@keyframes typing {
+  0% {
+    white-space: nowrap;
+    width: 0%;
+  }
+  100% {
+    white-space: wrap;
+    width: 100%;
+  }
+}
+
+.info {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--primary);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 0.5s steps(30, end);
+  padding: 5px 0;
+}
+span.command {
+  color: var(--secondary);
+  text-shadow: 0px 0px 2px var(--shadow);
+  font-weight: bold;
+}
+.output {
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--primary);
+  padding: 3px 20px;
+  overflow: hidden;
+  animation: typing 0.5s steps(30, end);
+  line-height: 1.5;
+}
+.error {
+  color: var(--error);
+  padding: 5px 0;
+}
+.helper {
+  color: var(--primary);
+  font-weight: bold;
+}
+a {
+  color: var(--dark);
+}
+
+.settings {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  font-size: 22px;
+  color: var(--bg);
+  border-radius: 100%;
+  background-color: var(--primary);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.settings i {
+  transition: 0.5s ease-in-out;
+}
+
+.settings:hover i {
+  rotate: 60deg;
+}
+.color-options {
+  position: absolute;
+  bottom: 0;
+  right: 100%;
+  background-color: var(--primary);
+  display: none;
+}
+.settings:hover {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.settings:hover .color-options {
+  height: 50px;
+  display: flex;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-left: 10px;
+}
+.settings .color-options .color {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: var(--bg);
+}
