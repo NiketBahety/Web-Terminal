@@ -91,6 +91,15 @@ colors = [
     shadow: "#586e7565",
   },
   {
+    bg: "#1d1f21",
+    primary: "#de935f",
+    dark: "#8abeb7",
+    secondary: "#b294bb",
+    cursor: "#c5c8c6",
+    error: "#f25244",
+    shadow: "#b294bba0",
+  },
+  {
     bg: "#c2c5aa",
     primary: "#333d29",
     dark: "#582f0e",
@@ -105,7 +114,7 @@ colors = [
     dark: "#b5bfe2",
     secondary: "#e5c890",
     cursor: "#93a1a1",
-    error: "#dc3e30",
+    error: "#f25244",
     shadow: "#e5c99074",
   },
 ];

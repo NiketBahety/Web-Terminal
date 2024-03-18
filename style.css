@@ -32,8 +32,18 @@
   --dark: #b5bfe2;
   --secondary: #e5c890;
   --cursor: #93a1a1;
-  --error: #dc3e30;
+  --error: #f25244;
   --shadow: #e5c99074;
+
+  /* Pallete 4 */
+
+  /* --bg: #1d1f21;
+  --primary: #de935f;
+  --dark: #8abeb7;
+  --secondary: #b294bb;
+  --cursor: #c5c8c6;
+  --error: #f25244;
+  --shadow: #b294bba0; */
 }
 body {
   background-color: var(--bg);
@@ -107,6 +117,9 @@ body {
   0% {
     white-space: nowrap;
     width: 0%;
+  }
+  99% {
+    white-space: nowrap;
   }
   100% {
     white-space: wrap;
