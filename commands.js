@@ -117,4 +117,13 @@ colors = [
     error: "#f25244",
     shadow: "#e5c99074",
   },
+  {
+    bg: "#13080d",
+    primary: "#b87395",
+    dark: "#82bca7",
+    secondary: "#74aec2",
+    cursor: "#c5c8c6",
+    error: "#f25244",
+    shadow: "#82bca769",
+  },
 ];

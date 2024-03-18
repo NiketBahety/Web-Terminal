@@ -15,7 +15,6 @@ const addListeners = () => {
     line.innerHTML += `\n<span class="command">${text}</span
         >`;
 
-    console.log(text);
     displayResult(text);
 
     command.innerText = "";
