@@ -293,3 +293,9 @@ const displayResult = (value) => {
       p.innerHTML = `Command not found. For a list of commands, type <span class="command">'help'</span>.`;
   }
 };
+
+// const input = document.getElementById("input");
+// input.focus();
+// input.addEventListener("blur", () => {
+//   input.focus();
+// });

@@ -108,18 +108,17 @@ body {
   margin: 10px 0;
 }
 .banner {
-  font-size: 22px;
+  font-size: min(2.5vw, 26px);
   color: var(--dark);
+  white-space: nowrap;
 }
 .banner p {
   overflow: hidden;
-  white-space: nowrap;
   display: block;
   animation: typing 0.5s steps(30, end);
 }
 #command-line {
   overflow: hidden;
-  white-space: nowrap;
   animation: typing 0.5s steps(30, end);
 }
 
@@ -138,11 +137,10 @@ body {
 }
 
 .info {
-  font-size: 18px;
+  font-size: min(3vw, 18px);
   font-weight: bold;
   color: var(--primary);
   overflow: hidden;
-  white-space: nowrap;
   animation: typing 0.5s steps(30, end);
   padding: 5px 0;
 }
